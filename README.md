@@ -12,24 +12,18 @@ other agents-runtime-compatible tools). Each skill is a self-contained
 
 ## Usage
 
-### OpenCode
-
-Copy (or symlink) a skill directory into your personal skills folder:
+Install all skills from this repo:
 
 ```bash
-cp -r commit-code ~/.config/opencode/skill/
+npx skills add icyzyy/agents-skills
 ```
 
-Or reference this repo's skills directory directly in your OpenCode config.
-
-### Claude Code
+Or copy a skill manually into your agent's skills folder:
 
 ```bash
-cp -r commit-code ~/.claude/skills/
+cp -r commit-code ~/.config/opencode/skill/   # OpenCode
+cp -r commit-code ~/.claude/skills/           # Claude Code
 ```
-
-The skill triggers automatically when a task matches its description
-(e.g. "commit my changes"), or it can be invoked explicitly.
 
 ## Commit messages
 
